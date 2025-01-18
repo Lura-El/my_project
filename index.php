@@ -1,3 +1,4 @@
 <?php
 
-echo "Hi ga";
+require __DIR__ . '/view/head.view.php';
+
