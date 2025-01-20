@@ -8,6 +8,17 @@
 </head>
 <body>
     <header>
+
+    <?php
+
+    require __DIR__ . './inc/signUp.inc.php/';
+        $navBtns = [
+            "Home" => '/inc/home.inc.php',
+            "Services" => '/inc/services.inc.php',
+            "Contact" => '/inc/contact.inc.php'
+        ]
+
+    ?>
         <nav class="topnav">
         <div>
         <a class="active" href="#home">Home</a>
@@ -17,8 +28,8 @@
         </div>
         
         <div>
-        <a href="#sing-up">Sign-up</a>
-        <a href="#log-in">Log-in</a>
+        <a href="">Sign-up</a>
+        <a href="">Log-in</a>
         </div>
         </nav>
     </header>
