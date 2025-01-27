@@ -1,0 +1,92 @@
+  html{
+    background-color: #ddd;
+  }
+  body{
+      margin: 0 auto;  
+      max-width: 75%;  
+      height: 100vh;
+      align-items: center;
+      background-color: #f2f2f2;
+  }
+
+  .topnav {
+      background-color: #f2f2f2;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+
+  .topnav a {
+    float: left;
+    color:rgb(9, 9, 9);
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 20px;
+  
+  }
+
+  .topnav{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  #navs a.active {
+    background-color:rgb(66, 136, 222);
+    color: white;
+  }
+
+  /* HOME */
+
+  #greeting{
+    font-size: 4rem;
+    padding-top: 2.5rem;
+    text-align: center;
+    
+  }
+  .container-para1{
+    font-size: 1.3rem;
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .container-para2{
+    padding: .5rem;
+  }
+  .container-para2 div{
+    padding: .2rem;
+    font-size: 1.1rem;
+    width: 50vw;
+    margin: 0 auto;
+  }
+  #whyus-title{
+    position: relative;
+    font-size: 1.3rem;
+    left: 16.5%;
+  }
+  .whyus-para h3{
+    display: inline;
+  }
+  /* FOOTER */
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 75%;
+    margin: 0 auto;  
+    max-width: 75%;  
+    align-items: center;
+    background-color: rgb(66, 136, 222);
+    color: white;
+    text-align: center;
+  }
+  @media screen and (max-height: 600px) {
+    body{
+      background-color: #ddd;
+      height: 100vh;
+    }
+  }
