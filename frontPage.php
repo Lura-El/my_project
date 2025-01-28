@@ -9,6 +9,7 @@
     <title> Laundry Shop</title>
 </head>
 <body>
+    
     <header>
         <nav id="navs" class="topnav">
             <div>
@@ -52,9 +53,7 @@
         </div>
     </main>
 
-    <div class="footer">
-        <p>We are located at []. Thank you for visiting our page.</p>
-      </div>
+    <?php require __DIR__ . '/view/footer.php'; ?>
 
     <?php 
         require __DIR__ . '/view/signin.php'; 
