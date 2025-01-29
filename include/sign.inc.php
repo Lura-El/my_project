@@ -3,11 +3,15 @@
 session_start();
 require __DIR__ . '/function.php';
 
-$username = e($_POST["username"]);
-$phonenumber = e($_POST["phoneNumber"]);
-$email = e($_POST["email"]);
-$password = e($_POST["password"]);
-$reenter_password = e($_POST["reenterPw"]);
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    $username = e($_POST["username"]);
+    $phonenumber = e($_POST["phoneNumber"]);
+    $email = e($_POST["email"]);
+    $password = e($_POST["password"]);
+    $reenter_password = e($_POST["reenterPw"]);
+    
+}
 
 if(empty($username)){
     echo "Username is required.";

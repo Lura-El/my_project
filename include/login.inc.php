@@ -11,7 +11,7 @@
     var_dump($username);
     
     if(empty($username) || empty($password)){
-        echo "Log your credentials.";
+        echo "Log your credentials."; 
     }
     $stmt = $pdo->prepare("SELECT * FROM `signin_info` WHERE username='$username' AND password='$password' LIMIT 1");
     $stmt->execute();
@@ -22,6 +22,8 @@
     if($result['username'] === $username && $result['password'] === $password){
         $_SESSION['username'] = $username;
         $_SESSION['success'] = "You are now logged in";
-        header('Location: users.php');
+        header('Location: ../users.php');
         exit();
+    }else{
+        echo "Incorrect credentials";
     }

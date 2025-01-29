@@ -9,7 +9,7 @@
     <title> Laundry Shop</title>
 </head>
 <body>
-    
+
     <header>
         <nav id="navs" class="topnav">
             <div>
@@ -55,9 +55,8 @@
 
     <?php require __DIR__ . '/view/footer.php'; ?>
 
-    <?php 
-        require __DIR__ . '/view/signin.php'; 
-        require __DIR__ . '/view/login.php'; 
-    ?>    
+    <?php  require __DIR__ . '/view/signin.php';?>    
+    
+    <?php require __DIR__ . '/view/login.php'; ?>
 </body>
 </html>

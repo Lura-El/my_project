@@ -6,7 +6,7 @@ const form2 = document.querySelector('#id02')
 
 
 navs.forEach(nav => {
-    nav.addEventListener('click', (event) => {
+    nav.addEventListener('click', () => {
         navs.forEach(nav => nav.classList.remove('active'));
         nav.classList.add('active');
     });

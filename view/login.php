@@ -1,6 +1,6 @@
 <div id="id02" class="modal">
 
-    <form action="<?php echo htmlspecialchars('include/login.inc.php'); ?>" method="POST" class="floating-form2">
+    <form method="POST" action="<?php echo htmlspecialchars('include/login.inc.php'); ?>" class="floating-form2">
 
         <h1>Please Log In</h1>
         <div class="container">
