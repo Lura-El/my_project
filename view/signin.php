@@ -6,20 +6,24 @@
     <p>Please fill in this form to create an account.</p>
     <hr>
 
+    <div <?php if(isset($name_error)): ?> class="form_error" <?php endif;?>>
     <label for="username"></label>
     <input type="text" placeholder="User Name" name="username" value="" required autocomplete="off">
+        <?php if (isset($name_error)): ?>
+            <span><?php echo $name_error; ?></span>
+        <?php endif ?>
+    </div>
 
-    <label for="phoneNumber"><label>
-    <input type="tel" placeholder="Phone" name="phoneNumber" required>
-
+    <div <?php if(isset($email_error)): ?> class="form_error" <?php endif;?>>
     <label for="email"></label>
     <input type="email" placeholder="Email" name="email" required>
+        <?php if(isset($email_error)): ?>
+            <span><?php echo $email_error; ?></span>
+        <?php endif ?>
+    </div>
 
     <label for="password"><label>
     <input type="password" placeholder="Create Password" name="password" required>
-
-    <label for="reenterPw"><label>
-    <input type="password" placeholder="Reenter Password" name="reenterPw" required>
 
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 

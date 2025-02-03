@@ -1,14 +1,14 @@
 <div id="id02" class="modal">
 
-    <form method="POST" action="<?php echo htmlspecialchars('include/login.inc.php'); ?>" class="floating-form2">
+    <form method="POST" action="include/login.inc.php" class="floating-form2">
 
         <h1>Please Log In</h1>
         <div class="container">
             <label for="username"></label>
-            <input type="text" placeholder="User Name" name="username" required>
+            <input type="text" placeholder="User Name" name="username" required id="username">
         
             <label for="password"></label>
-            <input type="password" placeholder="Enter Password" name="password" required>
+            <input type="password" placeholder="Enter Password" name="password" required id="password">
         
             <button type="submit">Log in</button>
         </div>

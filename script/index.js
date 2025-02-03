@@ -21,7 +21,7 @@ function clickBtn(button, form){
 clickBtn(signUpLink, form);
 clickBtn(logInLink, form2);
 
-// l
+
 
 
 
