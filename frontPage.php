@@ -55,7 +55,7 @@
 
     <?php require __DIR__ . '/view/footer.php'; ?>
 
-    <?php  require __DIR__ . '/view/signin.php';?>    
+    <?php require __DIR__ . '/view/signin.php'; ?>    
     
     <?php  require __DIR__ . '/view/login.php';?>  
 </body>

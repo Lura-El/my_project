@@ -1,6 +1,7 @@
 <div id="id01" class="modal">  
 
 <form style="border:1px solid #ccc" id="floating-form" method="POST" action="<?php echo htmlspecialchars('include/sign.inc.php'); ?>">
+   
     <div class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
